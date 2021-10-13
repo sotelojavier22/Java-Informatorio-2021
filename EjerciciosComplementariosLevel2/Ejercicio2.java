@@ -10,12 +10,14 @@ public class Ejercicio2 {
         cargaLista(lista);
         // imprimo lista
         System.out.println("Lista original\n");
+        System.out.println("Cantidad de elementos " + lista.size());
         imprimirLista(lista);
         // agrego un elemento al principio y al final de la lista
         lista.add(0, 23);
         lista.add(6, 32);
         // imprimo lista
         System.out.println("Lista modificada");
+        System.out.println("Cantidad de elementos " + lista.size());
         imprimirLista(lista);
     }
 
