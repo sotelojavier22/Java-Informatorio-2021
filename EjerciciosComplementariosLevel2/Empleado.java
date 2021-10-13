@@ -6,6 +6,13 @@ public class Empleado {
     private Integer horasTrabajadas;
     private Integer valorPorHora;
 
+    public Empleado(String nombreYApellido, Integer dni, Integer horasTrabajadas, Integer valorPorHora) {
+        this.nombreYApellido = nombreYApellido;
+        this.dni = dni;
+        this.horasTrabajadas = horasTrabajadas;
+        this.valorPorHora = valorPorHora;
+    }
+
     public Integer getDni() {
         return dni;
     }
