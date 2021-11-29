@@ -13,7 +13,9 @@ public class Ejercicio1 {
         palabras.add("Informatorio");
         palabras.add("");
         List<String> palabrasStream = palabras.stream()
-                .filter(palabra -> Optional.ofNullable(palabra).isEmpty() == false).collect(Collectors.toList());
+                .filter(palabra -> Optional.ofNullable(palabra).isEmpty() == false)
+                .filter(palabra -> palabra != "")
+                .collect(Collectors.toList());
         System.out.println(palabrasStream);
     }
 
